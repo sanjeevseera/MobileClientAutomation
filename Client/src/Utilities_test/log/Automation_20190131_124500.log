@@ -1,0 +1,90 @@
+INFO:root:Automation Framework Logs
+
+INFO:root: Starting test case Login_out
+INFO:root: Android Mobile picked[UDID: 3300f4b7d5f56461, VERSION: 8.1.0]
+INFO:root: initialization done in Action_funcs
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:4723/wd/hub/session {"desiredCapabilities": {"automationName": "UiAutomator2", "appActivity": "com.mavenir.ucc.tab.TabActivity", "deviceName": "Device", "platformVersion": "8.1.0", "noReset": "true", "appPackage": "com.mavenir.gmid", "platformName": "Android", "fullReset": "false", "newCommandTimeout": "3600", "udid": "3300f4b7d5f56461"}, "capabilities": {"firstMatch": [{"appium:appActivity": "com.mavenir.ucc.tab.TabActivity", "appium:appPackage": "com.mavenir.gmid", "appium:noReset": "true", "appium:fullReset": "false", "platformName": "Android", "appium:automationName": "UiAutomator2", "appium:platformVersion": "8.1.0", "appium:udid": "3300f4b7d5f56461", "appium:deviceName": "Device", "appium:newCommandTimeout": "3600"}]}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:4723
+DEBUG:urllib3.connectionpool:http://127.0.0.1:4723 "POST /wd/hub/session HTTP/1.1" 200 1088
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:4723/wd/hub/session/bf471737-dd4c-42a4-8df6-90cf3ce10ce9/elements {"using": "class name", "sessionId": "bf471737-dd4c-42a4-8df6-90cf3ce10ce9", "value": "android.widget.TextView"}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:4723
+DEBUG:urllib3.connectionpool:http://127.0.0.1:4723 "POST /wd/hub/session/bf471737-dd4c-42a4-8df6-90cf3ce10ce9/elements HTTP/1.1" 200 175
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:4723/wd/hub/session/bf471737-dd4c-42a4-8df6-90cf3ce10ce9/element/f0a8328a-5846-4ab7-a3eb-e07242795464/text {"sessionId": "bf471737-dd4c-42a4-8df6-90cf3ce10ce9", "id": "f0a8328a-5846-4ab7-a3eb-e07242795464"}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:4723
+DEBUG:urllib3.connectionpool:http://127.0.0.1:4723 "GET /wd/hub/session/bf471737-dd4c-42a4-8df6-90cf3ce10ce9/element/f0a8328a-5846-4ab7-a3eb-e07242795464/text HTTP/1.1" 200 90
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:4723/wd/hub/session/bf471737-dd4c-42a4-8df6-90cf3ce10ce9/element/df20b009-5170-4871-82e9-352b297648b7/text {"sessionId": "bf471737-dd4c-42a4-8df6-90cf3ce10ce9", "id": "df20b009-5170-4871-82e9-352b297648b7"}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:4723
+DEBUG:urllib3.connectionpool:http://127.0.0.1:4723 "GET /wd/hub/session/bf471737-dd4c-42a4-8df6-90cf3ce10ce9/element/df20b009-5170-4871-82e9-352b297648b7/text HTTP/1.1" 200 112
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:4723/wd/hub/session/bf471737-dd4c-42a4-8df6-90cf3ce10ce9/element {"using": "id", "sessionId": "bf471737-dd4c-42a4-8df6-90cf3ce10ce9", "value": "com.mavenir.gmid:id/dev_settings_fragment"}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:4723
+DEBUG:urllib3.connectionpool:http://127.0.0.1:4723 "POST /wd/hub/session/bf471737-dd4c-42a4-8df6-90cf3ce10ce9/element HTTP/1.1" 500 164
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+ERROR:root: Message: An element could not be located on the page using the given search parameters.
+
+ERROR:root: Login and Logout test is failed for user:[user5]
+INFO:root: Starting test case Login_out
+INFO:root: Android Mobile picked[UDID: 3300f4b7d5f56461, VERSION: 8.1.0]
+INFO:root: initialization done in Action_funcs
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:4723/wd/hub/session {"desiredCapabilities": {"automationName": "UiAutomator2", "appActivity": "com.mavenir.ucc.tab.TabActivity", "deviceName": "Device", "platformVersion": "8.1.0", "noReset": "true", "appPackage": "com.mavenir.gmid", "platformName": "Android", "fullReset": "false", "newCommandTimeout": "3600", "udid": "3300f4b7d5f56461"}, "capabilities": {"firstMatch": [{"appium:appActivity": "com.mavenir.ucc.tab.TabActivity", "appium:appPackage": "com.mavenir.gmid", "appium:noReset": "true", "appium:fullReset": "false", "platformName": "Android", "appium:automationName": "UiAutomator2", "appium:platformVersion": "8.1.0", "appium:udid": "3300f4b7d5f56461", "appium:deviceName": "Device", "appium:newCommandTimeout": "3600"}]}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:4723
+DEBUG:urllib3.connectionpool:http://127.0.0.1:4723 "POST /wd/hub/session HTTP/1.1" 200 1088
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:4723/wd/hub/session/a3f28a3e-9115-40c3-92fb-91c4488e7436/elements {"using": "class name", "sessionId": "a3f28a3e-9115-40c3-92fb-91c4488e7436", "value": "android.widget.TextView"}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:4723
+DEBUG:urllib3.connectionpool:http://127.0.0.1:4723 "POST /wd/hub/session/a3f28a3e-9115-40c3-92fb-91c4488e7436/elements HTTP/1.1" 200 175
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:4723/wd/hub/session/a3f28a3e-9115-40c3-92fb-91c4488e7436/element/f6d32eb1-ac28-41d3-b8e6-24a8f18c2a67/text {"sessionId": "a3f28a3e-9115-40c3-92fb-91c4488e7436", "id": "f6d32eb1-ac28-41d3-b8e6-24a8f18c2a67"}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:4723
+DEBUG:urllib3.connectionpool:http://127.0.0.1:4723 "GET /wd/hub/session/a3f28a3e-9115-40c3-92fb-91c4488e7436/element/f6d32eb1-ac28-41d3-b8e6-24a8f18c2a67/text HTTP/1.1" 200 90
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:4723/wd/hub/session/a3f28a3e-9115-40c3-92fb-91c4488e7436/element/d5dce78d-bd3e-4c77-a608-60d37ff03f30/text {"sessionId": "a3f28a3e-9115-40c3-92fb-91c4488e7436", "id": "d5dce78d-bd3e-4c77-a608-60d37ff03f30"}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:4723
+DEBUG:urllib3.connectionpool:http://127.0.0.1:4723 "GET /wd/hub/session/a3f28a3e-9115-40c3-92fb-91c4488e7436/element/d5dce78d-bd3e-4c77-a608-60d37ff03f30/text HTTP/1.1" 200 112
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:4723/wd/hub/session/a3f28a3e-9115-40c3-92fb-91c4488e7436/element {"using": "id", "sessionId": "a3f28a3e-9115-40c3-92fb-91c4488e7436", "value": "com.mavenir.gmid:id/dev_settings_fragment"}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:4723
+DEBUG:urllib3.connectionpool:http://127.0.0.1:4723 "POST /wd/hub/session/a3f28a3e-9115-40c3-92fb-91c4488e7436/element HTTP/1.1" 500 164
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+ERROR:root: Message: An element could not be located on the page using the given search parameters.
+
+ERROR:root: Login and Logout test is failed for user:[user4]
+INFO:root: Starting test case Basic_Call
+INFO:root: Android Mobile picked[UDID: 3300f4b7d5f56461, VERSION: 8.1.0]
+INFO:root: initialization done in Action_funcs
+INFO:root: Starting test case Basic_Messaging
+INFO:root: initialization done in Action_funcs
+INFO:root: Android Mobile picked[UDID: 3300f4b7d5f56461, VERSION: 8.1.0]
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:4723/wd/hub/session {"desiredCapabilities": {"automationName": "UiAutomator2", "appActivity": "com.mavenir.ucc.tab.TabActivity", "deviceName": "Device", "platformVersion": "8.1.0", "noReset": "true", "appPackage": "com.mavenir.gmid", "platformName": "Android", "fullReset": "false", "newCommandTimeout": "3600", "udid": "3300f4b7d5f56461"}, "capabilities": {"firstMatch": [{"appium:appActivity": "com.mavenir.ucc.tab.TabActivity", "appium:appPackage": "com.mavenir.gmid", "appium:noReset": "true", "appium:fullReset": "false", "platformName": "Android", "appium:automationName": "UiAutomator2", "appium:platformVersion": "8.1.0", "appium:udid": "3300f4b7d5f56461", "appium:deviceName": "Device", "appium:newCommandTimeout": "3600"}]}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:4723
+DEBUG:urllib3.connectionpool:http://127.0.0.1:4723 "POST /wd/hub/session HTTP/1.1" 200 1088
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:4723/wd/hub/session/122a4f3e-d9f2-4faf-bb21-48fa80b6b379/elements {"using": "class name", "sessionId": "122a4f3e-d9f2-4faf-bb21-48fa80b6b379", "value": "android.widget.TextView"}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:4723
+DEBUG:urllib3.connectionpool:http://127.0.0.1:4723 "POST /wd/hub/session/122a4f3e-d9f2-4faf-bb21-48fa80b6b379/elements HTTP/1.1" 200 175
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:4723/wd/hub/session/122a4f3e-d9f2-4faf-bb21-48fa80b6b379/element/5fbedde6-5d2d-49cf-934f-fa0993abb76e/text {"sessionId": "122a4f3e-d9f2-4faf-bb21-48fa80b6b379", "id": "5fbedde6-5d2d-49cf-934f-fa0993abb76e"}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:4723
+DEBUG:urllib3.connectionpool:http://127.0.0.1:4723 "GET /wd/hub/session/122a4f3e-d9f2-4faf-bb21-48fa80b6b379/element/5fbedde6-5d2d-49cf-934f-fa0993abb76e/text HTTP/1.1" 200 90
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:4723/wd/hub/session/122a4f3e-d9f2-4faf-bb21-48fa80b6b379/element/461d9276-72a9-47f3-9d91-f238152787e8/text {"sessionId": "122a4f3e-d9f2-4faf-bb21-48fa80b6b379", "id": "461d9276-72a9-47f3-9d91-f238152787e8"}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:4723
+DEBUG:urllib3.connectionpool:http://127.0.0.1:4723 "GET /wd/hub/session/122a4f3e-d9f2-4faf-bb21-48fa80b6b379/element/461d9276-72a9-47f3-9d91-f238152787e8/text HTTP/1.1" 200 112
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:4723/wd/hub/session/122a4f3e-d9f2-4faf-bb21-48fa80b6b379/element {"using": "id", "sessionId": "122a4f3e-d9f2-4faf-bb21-48fa80b6b379", "value": "com.mavenir.gmid:id/dev_settings_fragment"}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:4723
+DEBUG:urllib3.connectionpool:http://127.0.0.1:4723 "POST /wd/hub/session/122a4f3e-d9f2-4faf-bb21-48fa80b6b379/element HTTP/1.1" 500 164
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+ERROR:root: Exception: Message: An element could not be located on the page using the given search parameters.
+
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:4723/wd/hub/session/122a4f3e-d9f2-4faf-bb21-48fa80b6b379/element {"using": "id", "sessionId": "122a4f3e-d9f2-4faf-bb21-48fa80b6b379", "value": "com.mavenir.gmid:id/iv_user_status"}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:4723
+DEBUG:urllib3.connectionpool:http://127.0.0.1:4723 "POST /wd/hub/session/122a4f3e-d9f2-4faf-bb21-48fa80b6b379/element HTTP/1.1" 500 164
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:4723/wd/hub/session/122a4f3e-d9f2-4faf-bb21-48fa80b6b379 {"sessionId": "122a4f3e-d9f2-4faf-bb21-48fa80b6b379"}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:4723
+DEBUG:urllib3.connectionpool:http://127.0.0.1:4723 "DELETE /wd/hub/session/122a4f3e-d9f2-4faf-bb21-48fa80b6b379 HTTP/1.1" 200 76
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
