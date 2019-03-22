@@ -1,10 +1,13 @@
 from appium.webdriver.common.touch_action import TouchAction
 from time import sleep
-from Client.src.Utilities.Actions_android import android_setup
-from Client.src.Utilities.Actions_ios import ios_setup
-from Client.src.Utilities.Actions_web import web_setup
-from Client.src.Utilities_support.log_writer import log_print
-
+import sys
+import os
+libdir = os.path.dirname(__file__)
+sys.path.append(os.path.split(libdir)[0])
+from Utilities.Actions_android import android_setup
+from Utilities.Actions_ios import ios_setup
+from Utilities.Actions_web import web_setup
+from Utilities_support.log_writer import log_print
 
 
 class Action_funcs(android_setup, ios_setup, web_setup):

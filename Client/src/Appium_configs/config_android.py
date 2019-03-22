@@ -2,8 +2,13 @@
 Andriod strategy vaiables for
 Accessibility ID, Class name, ID, Name, XPath, Image
 """
-PORT = "4723"
-IP = "localhost"
+import sys
+import os
+libdir = os.path.dirname(__file__)
+sys.path.append(os.path.split(libdir)[0])
+from Appium_configs.config_general import *
+PORT = Appium_Port
+IP = Appium_IP
 url = "http://"+IP+":"+str(PORT)+"/wd/hub"
 
 android_id = "android:id"
@@ -25,6 +30,7 @@ UCC_id_login = {
     'input_password': gmid_id+"/et_input_password",
     'btn_login': gmid_id+"/btn_login",
     'line_name_view': gmid_id+"/line_name_view",
+    'line_number_view': gmid_id+"/line_number_view",
     'parent_layout': gmid_id+"/parent_layout",
     'navigate_button': gmid_id+"/navigate_button",
     'user_status': gmid_id+"/iv_user_status"

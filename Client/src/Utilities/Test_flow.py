@@ -1,13 +1,19 @@
-from Client.src.Utilities.Action_funcs import Action_funcs
-from Client.src.Utilities.base_setup import BaseSetup
-from Client.src.Utilities_support.log_writer import log_print
+import sys
+import os
+libdir = os.path.dirname(__file__)
+sys.path.append(os.path.split(libdir)[0])
+from Utilities.Action_funcs import Action_funcs
+from Utilities.base_setup import BaseSetup
+from Utilities_support.log_writer import log_print
 from time import sleep
+import inspect
 
 class TestFlow(Action_funcs):
 
     def Login_out(self, platform, user_id, user_pass):
+        func = inspect.stack()[1].function
         try:
-            log_print("info", "Starting test case Login_out")
+            log_print("info", "TestCase::[{0}] - ".format(func) + "Starting test case Basic_Messaging")
             VERSION, UDID = BaseSetup.getDevice(self, platform)
             log_print("info", "{0} Mobile picked[UDID: {1}, VERSION: {2}]".format(platform.capitalize(), UDID, VERSION))
             user = Action_funcs(VERSION, UDID, platform)
@@ -30,7 +36,8 @@ class TestFlow(Action_funcs):
             BaseSetup.addDevice(self, platform)
 
     def Basic_Call(self, platform, orig_id, orig_pass, term_id, term_pass):
-        log_print("info", "Starting test case Basic_Call")
+        func = inspect.stack()[1].function
+        log_print("info", "TestCase::[{0}] - ".format(func) + "Starting test case Basic_Call")
         Platform = platform.split("-")
         VERSION_1, UDID_1 = BaseSetup.getDevice(self, Platform[0])
         log_print("info", "{0} Mobile picked[UDID: {1}, VERSION: {2}]".format(Platform[0].capitalize(), UDID_1, VERSION_1))
@@ -62,8 +69,9 @@ class TestFlow(Action_funcs):
         return True
 
     def Basic_Messaging(self, platform, orig_id, orig_pass, term_id, term_pass):
+        func = inspect.stack()[1].function
         try:
-            log_print("info", "Starting test case Basic_Messaging")
+            log_print("info", "TestCase::[{0}] - ".format(func) + "Starting test case Basic_Messaging")
             Platform = platform.split("-")
             VERSION_1, UDID_1 = BaseSetup.getDevice(self, Platform[0])
             user1 = Action_funcs(VERSION_1, UDID_1, Platform[0])

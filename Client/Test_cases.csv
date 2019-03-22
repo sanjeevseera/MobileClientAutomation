@@ -1,0 +1,17 @@
+Test_Suit,OTT_Client
+CONFIG,Appium_Port,4723
+CONFIG,Appium_IP,10.10.32.35
+CONFIG,Appium_Server,macos
+CONFIG,orig_id,user5
+CONFIG,orig_pass,1234
+CONFIG,term_id,user4
+CONFIG,term_pass,1234
+
+
+Login_out_orig,'Login_out',Android,orig_id,orig_pass
+
+Login_out_term,'Login_out',Android,term_id,term_pass
+
+Basic_Call,'Basic_Call',Android-Android,orig_id,orig_pass,term_id,term_pass
+
+Basic_Messaging,'Basic_Messaging',Android-Android,orig_id,orig_pass,term_id,term_pass

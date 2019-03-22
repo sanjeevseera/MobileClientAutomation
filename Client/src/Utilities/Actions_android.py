@@ -1,7 +1,12 @@
 from appium.webdriver.common.touch_action import TouchAction
-from time import sleep
-from Client.src.Appium_configs.config_android import *
 from appium import webdriver
+from time import sleep
+import sys
+import os
+libdir = os.path.dirname(__file__)
+sys.path.append(os.path.split(libdir)[0])
+from Appium_configs.config_android import *
+
 
 class android_setup():
 
@@ -80,6 +85,7 @@ class android_setup():
                 element.click()
                 element.click()
                 element.click()
+                element.click()
                 #self.driver.find_element_by_xpath(UCC_xpath['ALLOW']).click()
                 #self.driver.find_element_by_xpath(UCC_xpath['ALLOW']).click()
                 #self.driver.find_element_by_xpath(UCC_xpath['ALLOW']).click()
@@ -88,7 +94,7 @@ class android_setup():
         sleep(10)
         self.driver.find_element_by_id(UCC_id_login['parent_layout']).click()
         user_line = self.driver.find_element_by_id(UCC_id_login['line_name_view']).text
-        user_number = self.driver.find_element_by_id(UCC_id_login['line_name_view']).text
+        user_number = self.driver.find_element_by_id(UCC_id_login['line_number_view']).text
         print(user_line, user_number)
         self.driver.find_element_by_id(UCC_id_login['navigate_button']).click()
         sleep(10)
