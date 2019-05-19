@@ -40,10 +40,10 @@ def email_reporter(html_report_dir):
                     send_to = conf_data_dict["send_to"].split(',')
                     subject = conf_data_dict["subject"]
                     '''
-                    send_from = "sanjeev.seera@mavenir.com"
+                    send_from = "sanjeev.seera@gmail.com"
                     PASSWORD = "Sveejnas#5"
-                    send_to = ["sanjeev.seera@mavenir.com"]
-                    #send_to = ["anil.punichithaya@mavenir.com", "sriram.g.n@mavenir.com", "sanjeev.seera@mavenir.com", "sireesha.mulakala@mavenir.com"]
+                    send_to = ["sanjeev.seera@gmail.com"]
+                    #send_to = ["anil.punichithaya@gmail.com", "sriram.g.n@gmail.com", "sanjeev.seera@gmail.com", "sireesha.mulakala@gmail.com"]
                     subject = "Rakuten Client Automation Test Report"
                     '''
                     text = "{:*^50s}\n".format("EXECUTION STATUS")
