@@ -5,7 +5,7 @@ attrs==18.2.0
 bcrypt==3.1.6
 cffi==1.12.2
 colorama==0.4.1
-cryptography==2.6.1
+cryptography==3.2
 html-testRunner==1.1.2
 idna==2.8
 Jinja2==2.9.5
